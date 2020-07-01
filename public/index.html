@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=410; user-scalable=no; minimal-ui" />
+    <title>Real Chess</title>
+    <link rel="icon" href="./favico.ico" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="lib/chessboard-0.3.0.min.css" />
+    <link rel="stylesheet" href="lib/WinJS.4.0/css/ui-light.css" />
+    <link rel="stylesheet" href="/default.css" />
+  </head>
+  <body>
+    <script>
+      function handleSubmit() {
+        if (document.getElementById("username").value === "") {
+          alert("Username not allowed");
+          // console.log("HELLO");
+        } else {
+          // console.log("HELLO NO");
+          // console.log(document.getElementById("username").value + "");
+        }
+      }
+    </script>
+    <div class="page login" id="page-login">
+      <div class="logo">
+        <img src="./img/chesslogo.jpg" class="imageLogo" alt="Loading" />
+      </div>
+      <div class="pageInput">
+        <label for="username">Enter your Name here : &nbsp;</label>
+        <input
+          id="username"
+          type="text"
+          style="padding-left: 4%;"
+          title="enter your name here"
+          placeholder="your name"
+        />
+
+        <button id="login" class="loginCheck" onClick="handleSubmit()">
+          Login
+        </button>
+      </div>
+    </div>
+    <div class="page lobby" id="page-lobby">
+      <h1>Real Chess</h1>
+      <label for="userLabel">Your Name</label>
+      <h2 id="userLabel"></h2>
+      <h3>Games Which are not completed</h3>
+      <div id="gamesList">
+        No active games
+      </div>
+      <h3>Players Online</h3>
+      <div id="userList">
+        No users online
+      </div>
+    </div>
+    <div class="page game" id="page-game">
+      <div class="game-buttons">
+        <button id="game-back">Back</button>
+        <button id="game-resign">Rematch With The User</button>
+      </div>
+      <div id="game-board" class="gameBoardCssCustum"></div>
+    </div>
+
+    <script src="lib/socket.io-1.2.0.js"></script>
+    <script src="lib/jquery-1.11.1.js"></script>
+    <script src="lib/WinJS.4.0/js/WinJS.min.js"></script>
+    <script src="lib/chess.min.js"></script>
+    <script src="lib/chessboard-0.3.0.min.js"></script>
+    <script src="/default.js"></script>
+  </body>
+</html>

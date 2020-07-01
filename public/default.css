@@ -1,0 +1,166 @@
+body {
+  overflow-y: auto;
+
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  /* align-items: center; */
+}
+
+.pageLogin {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 5%;
+  width: 250px;
+}
+
+.page {
+  margin-top: 20px;
+}
+
+.page-login {
+  display: flex;
+  flex-direction: column;
+}
+.imageLogo {
+  width: 50%;
+  display: flex;
+  margin: 2% 0 0 5%;
+}
+.game-buttons {
+  padding-left: 15%;
+}
+@media only screen and (max-width: 991px) {
+  .pageLogin {
+    display: flex;
+    flex-direction: row;
+  }
+  /* .pageInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px 0px 50px 0px;
+  } */
+}
+.gameBoardCssCustum {
+  width: 40vw;
+  height: 50vh !important;
+  /* margin-top: 5%; */
+  margin-left: 5%;
+}
+
+.page.login .logo {
+  display: block;
+  /* align-items: center !important; */
+  /* text-align: center !important; */
+  /* justify-content: center !important; */
+  /* background-color: rgb(223, 25, 25); */
+  /* background: url("/img/chesslogo.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center center; */
+
+  margin-bottom: 50px;
+
+  /* width: 100vh; */
+  /* height: 100vh; */
+}
+
+body {
+  background: linear-gradient(125deg, #ffffff 0%, #000000 100%),
+    linear-gradient(
+      200deg,
+      #ffd9e8 0%,
+      #ffd9e8 50%,
+      #de95ba calc(50% + 1px),
+      #de95ba 60%,
+      #7f4a88 calc(60% + 1px),
+      #7f4a88 75%,
+      #4a266a calc(75% + 1px),
+      #4a266a 100%
+    ),
+    linear-gradient(
+      113deg,
+      #ffd9e8 0%,
+      #ffd9e8 40%,
+      #de95ba calc(40% + 1px),
+      #de95ba 50%,
+      #7f4a88 calc(50% + 1px),
+      #7f4a88 70%,
+      #4a266a calc(70% + 1px),
+      #4a266a 100%
+    );
+  background-blend-mode: overlay, overlay, normal;
+}
+
+.page.login button {
+  margin-left: 0px;
+  margin-bottom: 20px;
+  height: 35px;
+  color: rgb(255, 0, 0);
+  border-radius: 15%;
+  cursor: pointer;
+  background-color: rgba(0, 255, 128, 0.651);
+}
+
+.page.login input {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 25px;
+  font-size: 12pt;
+  padding: 2px;
+  border-radius: 15%;
+  /* align-items: center; */
+  /* align-self: center; */
+  /* text-align: center; */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.lobby {
+  margin-left: 5%;
+}
+.page.lobby h2 {
+  color: rgb(235, 21, 21);
+}
+
+.page.lobby h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: rgb(255, 0, 0);
+}
+
+.page.game button {
+  margin-bottom: 10px;
+  color: rgb(255, 0, 0);
+  border-radius: 15%;
+  background-color: rgba(0, 255, 106, 0.651);
+  cursor: pointer;
+}
+
+#page-lobby {
+  display: none;
+}
+
+#page-game {
+  display: none;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.circle {
+  background-color: rgb(21, 255, 21);
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.circle.offline {
+  background-color: rgb(235, 235, 19);
+}
